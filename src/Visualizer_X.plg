@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Visualizer_X - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\NGUYEN~1\LOCALS~1\Temp\RSPF.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Visualizer_X.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Codes\Visualizer_X9\Visualizer_XView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\NGUYEN~1\LOCALS~1\Temp\RSPF.tmp" 
+Creating temporary file "C:\DOCUME~1\NGUYEN~1\LOCALS~1\Temp\RSP10.tmp" with contents
+[
+opengl32.lib glaux.lib glu32.lib glut32.lib /nologo /subsystem:windows /incremental:yes /pdb:"D:\Codes\Output/Visualizer_X.pdb" /debug /machine:I386 /out:"D:\Codes\Output/Visualizer_X.exe" /pdbtype:sept 
+.\Debug\ArrowObject.obj
+.\Debug\BODDialog.obj
+.\Debug\BondObject.obj
+.\Debug\CellsDialog.obj
+.\Debug\ChangeTypeDialog.obj
+.\Debug\ChildFrm.obj
+.\Debug\ClusteringDialog.obj
+.\Debug\CurrentDialog.obj
+.\Debug\CustomCommandLineInfo.obj
+.\Debug\CylinderCommand.obj
+.\Debug\DiffractionDialog.obj
+.\Debug\DlgToolBar.obj
+.\Debug\DrawingCommand.obj
+.\Debug\DrawingObject.obj
+.\Debug\DrawnButton.obj
+.\Debug\DrawnEdit.obj
+.\Debug\FFTStatic.obj
+.\Debug\FormatDialog.obj
+.\Debug\GLEnabledView.obj
+.\Debug\GraphCtrl.obj
+.\Debug\HelpDialog.obj
+.\Debug\HemisphereCommand.obj
+.\Debug\LightDialog.obj
+.\Debug\LineCommand.obj
+.\Debug\MainFrm.obj
+.\Debug\MaterialsDialog.obj
+.\Debug\matrix.obj
+.\Debug\ModelessDialog.obj
+.\Debug\myfft.obj
+.\Debug\ObjectDialog.obj
+.\Debug\Particle.obj
+.\Debug\ParticlesPage.obj
+.\Debug\ParticleTemplateDialog.obj
+.\Debug\PolygonCommand.obj
+.\Debug\Position.obj
+.\Debug\PreprocPage.obj
+.\Debug\ProjectionDialog.obj
+.\Debug\QuartersphereCommand.obj
+.\Debug\RDFDialog.obj
+.\Debug\ReadDialog.obj
+.\Debug\ReplicateDialog.obj
+.\Debug\ResizingDialog.obj
+.\Debug\Serie.obj
+.\Debug\SettingsDialog.obj
+.\Debug\SpecialEffectsPage.obj
+.\Debug\Sphere.obj
+.\Debug\SphereCommand.obj
+.\Debug\SphereObject.obj
+.\Debug\Splash.obj
+.\Debug\StdAfx.obj
+.\Debug\Strman.obj
+.\Debug\Texture.obj
+.\Debug\TwoQuartersphereCommand.obj
+.\Debug\TypeCommand.obj
+.\Debug\ViewParticleDialog.obj
+.\Debug\Visualizer_X.obj
+.\Debug\Visualizer_XDoc.obj
+.\Debug\Visualizer_XView.obj
+.\Debug\Visualizer_X.res
+]
+Creating command line "link.exe @C:\DOCUME~1\NGUYEN~1\LOCALS~1\Temp\RSP10.tmp"
+<h3>Output Window</h3>
+Compiling...
+Visualizer_XView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Visualizer_X.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

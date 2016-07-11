@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{5E5D6003-93CC-410F-98E0-F2C129069D4F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Visualizer_X.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>.\OpenGL\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>D:\Codes\Output\Visualizer_X.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>D:\Codes\Output\Visualizer_X.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\Visualizer_X.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glaux.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>.\OpenGL\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Visualizer_X.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>.\OpenGL\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>D:\Codes\Output\Visualizer_X.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>D:\Codes\Output\Visualizer_X.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\x64\Debug\Visualizer_X.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glaux.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\OpenGL\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Visualizer_X.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Visualizer_X.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Visualizer_X.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Visualizer_X.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glaux.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\OpenGL\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Visualizer_X.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Visualizer_X.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Visualizer_X.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\x64\Release\Visualizer_X.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glaux.lib;glu32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions />
+      <AdditionalLibraryDirectories>.\OpenGL\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrowObject.cpp" />
+    <ClCompile Include="BODDialog.cpp" />
+    <ClCompile Include="BondObject.cpp" />
+    <ClCompile Include="CellsDialog.cpp" />
+    <ClCompile Include="ChangeTypeDialog.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ClusteringDialog.cpp" />
+    <ClCompile Include="CurrentDialog.cpp" />
+    <ClCompile Include="CustomCommandLineInfo.cpp" />
+    <ClCompile Include="CylinderCommand.cpp" />
+    <ClCompile Include="DiffractionDialog.cpp" />
+    <ClCompile Include="DlgToolBar.cpp" />
+    <ClCompile Include="DrawingCommand.cpp" />
+    <ClCompile Include="DrawingObject.cpp" />
+    <ClCompile Include="DrawnButton.cpp" />
+    <ClCompile Include="DrawnEdit.cpp" />
+    <ClCompile Include="FFTStatic.cpp" />
+    <ClCompile Include="FormatDialog.cpp" />
+    <ClCompile Include="GLEnabledView.cpp" />
+    <ClCompile Include="GraphCtrl.cpp" />
+    <ClCompile Include="HelpDialog.cpp" />
+    <ClCompile Include="HemisphereCommand.cpp" />
+    <ClCompile Include="LightDialog.cpp" />
+    <ClCompile Include="LineCommand.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MaterialsDialog.cpp" />
+    <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="ModelessDialog.cpp" />
+    <ClCompile Include="myfft.cpp" />
+    <ClCompile Include="ObjectDialog.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticlesPage.cpp" />
+    <ClCompile Include="ParticleTemplateDialog.cpp" />
+    <ClCompile Include="PolygonCommand.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="PreprocPage.cpp" />
+    <ClCompile Include="ProjectionDialog.cpp" />
+    <ClCompile Include="QuartersphereCommand.cpp" />
+    <ClCompile Include="RDFDialog.cpp" />
+    <ClCompile Include="ReadDialog.cpp" />
+    <ClCompile Include="ReplicateDialog.cpp" />
+    <ClCompile Include="ResizingDialog.cpp" />
+    <ClCompile Include="Serie.cpp" />
+    <ClCompile Include="SettingsDialog.cpp" />
+    <ClCompile Include="SpecialEffectsPage.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="SphereCommand.cpp" />
+    <ClCompile Include="SphereObject.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Strman.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TwoQuartersphereCommand.cpp" />
+    <ClCompile Include="TypeCommand.cpp" />
+    <ClCompile Include="ViewParticleDialog.cpp" />
+    <ClCompile Include="Visualizer_X.cpp" />
+    <ClCompile Include="Visualizer_XDoc.cpp" />
+    <ClCompile Include="Visualizer_XView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Visualizer_X.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrowObject.h" />
+    <ClInclude Include="BODDialog.h" />
+    <ClInclude Include="BondObject.h" />
+    <ClInclude Include="BuildingBlock.h" />
+    <ClInclude Include="CellsDialog.h" />
+    <ClInclude Include="ChangeTypeDialog.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ClusteringDialog.h" />
+    <ClInclude Include="CurrentDialog.h" />
+    <ClInclude Include="CustomCommandLineInfo.h" />
+    <ClInclude Include="CylinderCommand.h" />
+    <ClInclude Include="DiffractionDialog.h" />
+    <ClInclude Include="DlgToolBar.h" />
+    <ClInclude Include="DrawingCommand.h" />
+    <ClInclude Include="DrawingObject.h" />
+    <ClInclude Include="DrawnButton.h" />
+    <ClInclude Include="DrawnEdit.h" />
+    <ClInclude Include="FFTStatic.h" />
+    <ClInclude Include="FormatDialog.h" />
+    <ClInclude Include="GLEnabledView.h" />
+    <ClInclude Include="GraphCtrl.h" />
+    <ClInclude Include="HelpDialog.h" />
+    <ClInclude Include="HemisphereCommand.h" />
+    <ClInclude Include="LightDialog.h" />
+    <ClInclude Include="LineCommand.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MaterialsDialog.h" />
+    <ClInclude Include="matrix.h" />
+    <ClInclude Include="memdc.h" />
+    <ClInclude Include="ModelessDialog.h" />
+    <ClInclude Include="myfft.h" />
+    <ClInclude Include="ObjectDialog.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticlesPage.h" />
+    <ClInclude Include="ParticleTemplateDialog.h" />
+    <ClInclude Include="PolygonCommand.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="PreprocPage.h" />
+    <ClInclude Include="ProjectionDialog.h" />
+    <ClInclude Include="QuartersphereCommand.h" />
+    <ClInclude Include="RDFDialog.h" />
+    <ClInclude Include="ReadDialog.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="ReplicateDialog.h" />
+    <ClInclude Include="ResizingDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Serie.h" />
+    <ClInclude Include="SettingsDialog.h" />
+    <ClInclude Include="SpecialEffectsPage.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="SphereCommand.h" />
+    <ClInclude Include="SphereObject.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StrMan.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TwoQuartersphereCommand.h" />
+    <ClInclude Include="TypeCommand.h" />
+    <ClInclude Include="ViewParticleDialog.h" />
+    <ClInclude Include="Visualizer_X.h" />
+    <ClInclude Include="Visualizer_XDoc.h" />
+    <ClInclude Include="Visualizer_XView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\diffract.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\idr_mate.ico" />
+    <Image Include="res\idr_rdf.ico" />
+    <Image Include="res\idr_visu.ico" />
+    <Image Include="Splsh16.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\Visualizer_X.ico" />
+    <Image Include="res\Visualizer_XDoc.ico" />
+    <Image Include="visualizerX.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Visualizer_X.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
