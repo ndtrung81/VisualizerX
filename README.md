@@ -4,8 +4,6 @@ VisualizerX is an interactive tool for particle visualization and analysis.
 
 Contact: Trung D. Nguyen (ndactrung@gmail.com)
 
-Copyright 2011
-
 == Features ==
 
 - Flexible user-defined building block geometries: cylinders, polygons, polyhedra and
@@ -20,10 +18,7 @@ spheres with different diameters, lines and more.
   + Camera setup, lighting, blending, fogging, materials are fully customizable,
   + Structure manipulation: shifts, translations, replications are supported.
 - Support drag-and-drop XYZ-format files directly to the application window.
-- Support Copy/Paste (Device Independent Bitmap- DIB) images into documents,
-e.g. Word, Excel, PowerPoint and Paint. DIBs in PowerPoint can be saved as high resolution images
-(up to 300 dpi) with ExportBitmapResolution set in the Windows registry. Higher DPIs can be achieved
-by GIMP (Scale Image).
+- Support Copy/Paste (Device Independent Bitmap- DIB) images into clipboard.
 - Support streaming from ASCII files which are produced by concatenating multiple .XYZ files
 for animated visualization and screen capture software.
 - Support streaming from standard input
@@ -32,7 +27,6 @@ for animated visualization and screen capture software.
 == System requirements ==
 
 - Operating system: MS Windows XP and later+, 32- and 64-bit
-- Memory: None
 
 == License ==
 
